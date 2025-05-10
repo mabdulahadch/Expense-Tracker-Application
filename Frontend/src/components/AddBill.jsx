@@ -6,7 +6,7 @@ const AddBill = () => {
   const [formData, setFormData] = useState({
     description: '',
     amount: '',
-    type: '',
+    type: 'expense',
     category: ''
   });
 
@@ -28,7 +28,7 @@ const AddBill = () => {
       setFormData({
         description: '',
         amount: '',
-        type: '',
+        type: 'expense',
         category: ''
       });
     } catch (err) {
