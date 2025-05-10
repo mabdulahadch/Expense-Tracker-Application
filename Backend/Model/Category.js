@@ -3,7 +3,6 @@ import mongoose from "mongoose";
 const CategorySchema = new mongoose.Schema({
   name: { type: String, required: true, unique: true },
   type: { type: String, enum: ['income', 'expense'], required: true },
-  user: { type: mongoose.Schema.Types.ObjectId, ref: 'User' }
 });
 
 const Category = mongoose.model("Category", CategorySchema);
