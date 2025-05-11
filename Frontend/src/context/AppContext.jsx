@@ -3,7 +3,8 @@ import axios from "axios";
 
 const AppContext = createContext();
 
-const API_URL = "http://localhost:5000/api";
+// const API_URL = "http://localhost:5000/api";
+const API_URL = "https://expense-tracker-application-production-7de7.up.railway.app/api";
 
 export const AppProvider = ({ children }) => {
   const [bills, setBills] = useState([]);
