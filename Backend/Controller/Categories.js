@@ -36,7 +36,7 @@ export const findAndReplaceCategory = async (req, res) => {
     const category = await Category.findOneAndReplace(
        { _id: req.params.id },
       req.body,
-      { new: true } // correct for Mongoose
+      { new: true }
     );
     res.json(category);
   } catch (err) {

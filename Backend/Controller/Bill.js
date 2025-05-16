@@ -130,7 +130,7 @@ export const importBills = async (req, res) => {
 
 
 
-// only testing wrna Schema urr gay gaa
+// only testing wrna collection urr gay gaa
 export const renameBillsCollection = async () => {
   await mongoose.connection.db.renameCollection('bills', 'transactions');
 };
